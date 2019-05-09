@@ -8,8 +8,12 @@
 #     toppings2 = int(input('you have ordered a pizza with {} toppings\n'.format(toppings)))
         
 #     break
-quantity = int(input('How many pizzas do you want to order?'))
-inputs = []
+pizza_id = 0
+quantity = int(input('How many pizzas do you want to order?\n'))
+toppings = {}
 for x in range(quantity):
-    inputs.append(input('How many toppings for pizza {} \n'.format(quantity)))
+    pizza_id += 1
+    topping = input('How many toppings for pizza {} \n'.format(pizza_id))
+    toppings[pizza_id] = topping 
+    print('you have ordered a pizza with {} toppings.'.format(topping))
         
